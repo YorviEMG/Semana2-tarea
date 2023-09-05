@@ -21,15 +21,9 @@ public class AlumnoController {
 	@GetMapping(value = "/verAlumno" )
 	public String verAlumno() {return "registraAlumno";}
 
-	@GetMapping(value = "/verConcurso" )
-	public String verConcurso() {return "registraConcurso";}
-
-	@GetMapping(value = "/verJugador" )
-	public String verJugador() {return "registraJugador";}
-
 
 	@PostMapping("/registraAlumno")
-	@ResponseBody
+	@ResponseBody  // Spring luego de mandar el form serializado, detecta automáticamente que ese form debe encajar en el tipo alumno
 	public Map<?, ?> registra(Alumno obj){
 		HashMap<String, String> map = new HashMap<String, String>();
 		Alumno objSalida = service.insertaAlumno(obj);

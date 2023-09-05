@@ -56,7 +56,7 @@
 		</div>
 		
 		<div class="row" style="margin-top: 2%" align="center"	>
-				<button id="id_registrar" type="button" class="btn btn-primary" >Crea Alumno</button>
+				<button id="id_registrar" type="button" class="btn btn-primary" >Crear Alumno</button>
 		</div>	
 	</form>
 </div>
